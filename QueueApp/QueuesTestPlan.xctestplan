@@ -1,0 +1,77 @@
+{
+  "configurations" : [
+    {
+      "id" : "8E7E02C0-09A4-43E5-9002-FFAD79D1D104",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "selectedTests" : {
+        "suites" : [
+          {
+            "name" : "ArrayQueueTests",
+            "testFunctions" : [
+              "testClear()",
+              "testDequeue()",
+              "testEnqueue()",
+              "testLimitedCapacityClearAndReEnqueue()",
+              "testLimitedCapacityEnqueueFailure()",
+              "testLimitedCapacityEnqueueSuccess()",
+              "testQueueIsEmptyInitially()"
+            ]
+          },
+          {
+            "name" : "LinkedListQueueTests",
+            "testFunctions" : [
+              "testClear()",
+              "testDequeue()",
+              "testEnqueue()",
+              "testLimitedCapacityClearAndReEnqueue()",
+              "testLimitedCapacityEnqueueFailure()",
+              "testLimitedCapacityEnqueueSuccess()",
+              "testQueueIsEmptyInitially()"
+            ]
+          },
+          {
+            "name" : "RingBufferQueueTests",
+            "testFunctions" : [
+              "testClear()",
+              "testDequeue()",
+              "testEnqueue()",
+              "testLimitedCapacityClearAndReEnqueue()",
+              "testLimitedCapacityEnqueueFailure()",
+              "testLimitedCapacityEnqueueSuccess()",
+              "testQueueIsEmptyInitially()"
+            ]
+          },
+          {
+            "name" : "RingBufferTests",
+            "testFunctions" : [
+              "testBufferInitialState()",
+              "testBufferReadOperations()",
+              "testBufferWrapAround()",
+              "testBufferWriteOperations()",
+              "testClearResetsBuffer()",
+              "testReadFromEmptyBufferReturnsNil()",
+              "testWriteToFullBufferThrows()"
+            ]
+          }
+        ]
+      },
+      "target" : {
+        "containerPath" : "container:QueueApp.xcodeproj",
+        "identifier" : "2AB51E7D2E391A6C0033B2BD",
+        "name" : "QueuesTests"
+      }
+    }
+  ],
+  "version" : 1
+}
